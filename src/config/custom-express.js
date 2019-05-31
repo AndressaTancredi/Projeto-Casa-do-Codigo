@@ -1,6 +1,10 @@
-//Trouxe do arq. server.js e referenciei lá.
 const express = require('express'); 
 const app = express();
 
-//Dizendo pro node que meu modulo vai exportar app que guarda o objeto do express
+//Declarar a importação do módulo de rotas
+const rotas = require('../app/rotas/rotas')
+rotas(app);
+
 module.exports = app;
+
+
