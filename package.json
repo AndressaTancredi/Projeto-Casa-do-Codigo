@@ -1,21 +1,27 @@
 {
-  "name": "server-wonderful",
+  "name": "casadocodigo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "Livraria Casa do Codigo",
+  "main": "server.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
+    "express": "4.16.3",
     "nodemon": "^1.19.1"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndressaTancredi/Projeto-Casa-do-Codigo.git"
+  },
+  "author": "Andressa Tancredi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndressaTancredi/Projeto-Casa-do-Codigo/issues"
+  },
+  "homepage": "https://github.com/AndressaTancredi/Projeto-Casa-do-Codigo#readme"
 }
