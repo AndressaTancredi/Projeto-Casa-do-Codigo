@@ -14,10 +14,22 @@ module.exports = (app) => {
         );
     });
     
-    //Troquei o .send para o .marko e importei:
-    app.get('/livros', function(req,resp) {
-        resp.marko( 
-            require('../views/livros/lista/lista.marko')
+    //Quero carregar a lista.marko e carregar o valor da lista de array que eu defini - depois uso a marko expression no lista.marko
+    app.get('/livros', function(req, resp) {
+        resp.marko(
+            require('../views/livros/lista/lista.marko'),
+            {
+                livros: [
+                    { 
+                        id: 1,
+                        titulo: 'Fundamentos do Node'
+                    },
+                    { 
+                        id: 2,
+                        titulo: 'Node Avançado'
+                    }
+                ]
+            }
         );
     });
 };
