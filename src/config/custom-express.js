@@ -1,3 +1,7 @@
+//Adicionando dois requires um para o node e outro para trabalhar com o express:
+require('marko/node-require').install();
+require('marko/express');
+
 const express = require('express'); 
 const app = express();
 
